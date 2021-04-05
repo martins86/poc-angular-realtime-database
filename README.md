@@ -1,27 +1,26 @@
-# PocAngularRealtimeDatabase
+# Poc Angular 11 Firebase 8 Realtime Database
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+https://console.firebase.google.com/
 
-## Development server
+npm install -g firebase-tools
+npm install firebase@8.3.2 --save
+npm install @angular/fire@6.1.4 --save
+npm install @angular/material@11.2.7 @angular/cdk@11.2.7 --save
+npm install bootstrap5.0.0-beta3 --save
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+firebase login
 
-## Code scaffolding
+firebase init
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ng g m pages/client --module app --routing
+ng g c pages/client
 
-## Build
+ng g m shared/components/form-edit --module  pages/client/clientmodule.ts
+ng g c shared/components/form-edit
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ng g m shared/components/list --module pages/client/client.module.ts
+ng g c shared/components/list
 
-## Running unit tests
+ng g s shared/services/data/data
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng g s shared/services/client/client
