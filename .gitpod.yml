@@ -11,7 +11,7 @@ tasks:
      echo n | npm i @angular/cli &&
      npm install &&
      sleep 6 &&
-     ng serve --host 0.0.0.0 --disableHostCheck
+     ng serve --host 0.0.0.0 --disable-host-check
 
 # Github
 github:
