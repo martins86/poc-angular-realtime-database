@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start:dev": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng build",
+    "build:gh-pages": "ng build --prod --aot --deploy-url ./ --base-href ./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
